@@ -42,15 +42,10 @@ an 8-hour build.
 
 ## 4. How to Run
 ```bash
-### 1. Create a virtual environment
-py -m venv venv    #Mac/Linux: python3 -m venv venv
-### 2. Activate the virtual environment
-venv\Scripts\activate.ps1     #Mac/Linux: source venv/bin/activate    
-
+py -m venv venv                         # Mac/Linux: python3 -m venv venv
+venv\Scripts\activate.ps1               # Mac/Linux: source venv/bin/activate    
 pip install -r requirements.txt
-
 # Get a free key at https://console.groq.com/keys
-
 streamlit run app.py
 ```
 The application should open automatically in a browser,
