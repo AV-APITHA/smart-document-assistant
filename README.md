@@ -41,20 +41,21 @@ an 8-hour build.
 | LLM | Groq API (Llama 3.1 8B Instant) | Free tier, very fast inference, OpenAI-compatible API |
 
 ## 4. How to Run
-
 ```bash
-python3 -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
+### 1. Create a virtual environment
+py -m venv venv    #Mac/Linux: python3 -m venv venv
+### 2. Activate the virtual environment
+venv\Scripts\activate.ps1     #Mac/Linux: source venv/bin/activate    
+
 pip install -r requirements.txt
 
 # Get a free key at https://console.groq.com/keys
-cp .env.example .env            # then edit .env and paste your key
-# or just paste the key into the sidebar field when the app is running
 
 streamlit run app.py
 ```
-
-Then: upload one or more PDF/TXT files in the sidebar → click **Process documents** →
+The application should open automatically in a browser,
+If it does not open automatically, open the URL displayed in the terminal.
+Then: paste the key into the left sidebar field. upload one or more PDF/TXT files in the sidebar → click **Process documents** →
 type a question → **Ask**.
 
 ## 5. Hallucination Handling
