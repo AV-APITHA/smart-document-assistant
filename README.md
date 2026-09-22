@@ -46,11 +46,11 @@ py -m venv venv                         # Mac/Linux: python3 -m venv venv
 venv\Scripts\activate.ps1               # Mac/Linux: source venv/bin/activate    
 pip install -r requirements.txt
 # Get a free key at https://console.groq.com/keys
+cp .env.example .env            # then edit .env and paste your key
+# or just paste the key into the sidebar field when the app is running
 streamlit run app.py
 ```
-The application should open automatically in a browser,
-If it does not open automatically, open the URL displayed in the terminal.
-Then: paste the key into the left sidebar field. upload one or more PDF/TXT files in the sidebar → click **Process documents** →
+Then: upload one or more PDF/TXT files in the sidebar → click **Process documents** →
 type a question → **Ask**.
 
 ## 5. Hallucination Handling
