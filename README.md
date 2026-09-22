@@ -98,6 +98,6 @@ All generated code was read, run, and adjusted before submission.
 | Problem understanding | 20 min |
 | Core pipeline (parsing, chunking, embeddings, FAISS) | 2.5 hr |
 | UI + LLM integration + hallucination handling | 2 hr |
-| Creative features (memory, confidence) | 45 min |
+| Creative features (memory, confidence) | 40 min |
 | Testing/debugging | 1.5 hr |
 | README + architecture diagram + video | 1 hr |
